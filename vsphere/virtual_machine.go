@@ -466,7 +466,7 @@ func findDatastore(c *govmomi.Client, f *object.DatacenterFolders, vm *object.Vi
 
 // createNetworkDevice creates VirtualDeviceConfigSpec for Network Device.
 func createNetworkDevice(f *find.Finder, label, adapterType string) (*types.VirtualDeviceConfigSpec, error) {
-	network, err := f.Network(context.TODO(), "*"+label)
+	network, err := f.Network(context.TODO(), label)
 	if err != nil {
 		return nil, err
 	}
