@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/hashicorp/terraform/plugin"
-	"github.com/panther-it/terraform-provider-vsphere"
+	"github.com/panther-it/terraform-provider-vsphere/vsphere"
 )
 
 func main() {
